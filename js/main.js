@@ -10,5 +10,5 @@ $('#totop').click(function () {
 })
 $('#goplay').click(function () {
   var tit = $('#goplay').attr('name')
-  window.location.href = 'https://www.banmnw.com/film/search.php?q=' + tit
+  window.location.href = '/search.php?q=' + tit
 })
