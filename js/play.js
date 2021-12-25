@@ -37,11 +37,14 @@ var sitejs={
 	},
 	'defaultVurl':function(){
 		vurls = Base64.decode(vinfos);
-		vurlfenge = vurls.split(/#/);
+		vurlfenge = vurls.split('#');
+		vurlrfenge = vurls.split('$');
 		if (vurlfenge.length >= 1) {
-			vurl = vurlfenge[0].split('$')[1];//console.log(vurl);
-		} else{
-			vurl = vurls;//console.log(vurl);
+			vurl = vurlfenge[0].split('$')[1];
+		} else if(vurlrfenge >= 1){
+			vurl = vurlfenge[0].split('$')[1];
+		}else{
+			vurl = vurls;console.log(vurl);
 		}
 		sitejs.chanageColor();
 		sitejs.addPlayBox(vurl);
