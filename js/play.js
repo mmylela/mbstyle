@@ -39,9 +39,9 @@ var sitejs={
 		vurls = Base64.decode(vinfos);
 		vurlfenge = vurls.split(/#/);
 		if (vurlfenge.length >= 1) {
-			vurl = vurlfenge[0].split('$')[1];console.log(vurl);
+			vurl = vurlfenge[0].split('$')[1];//console.log(vurl);
 		} else{
-			vurl = vurls;console.log(vurl);
+			vurl = vurls;//console.log(vurl);
 		}
 		sitejs.chanageColor();
 		sitejs.addPlayBox(vurl);
